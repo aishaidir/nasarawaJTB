@@ -59,11 +59,11 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://Alhaq@bitbucket.org/stetis/appcore.git"
+    "url": "https://github.com/aishaidir/nasarawaJTB"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/stetis/appcore#readme",
+  "homepage": "https://github.com/aishaidir/nasarawaJTB/blob/master/README.md",
   "keywords": [],
   "devDependencies": {}
 }
