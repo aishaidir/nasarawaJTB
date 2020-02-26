@@ -53,8 +53,9 @@ export const styles = theme => ({
     }),
     backgroundColor: '#fff',
     color: grey[700],
-    width: `calc(100% - 59px)`,
-    marginLeft: 57
+    width: "calc(100% - 59px)",
+    marginLeft: 57,
+    boxShadow: "rgba(9, 30, 66, 0.08) 0px 0px 0px 1px, rgba(9, 30, 66, 0.08) 0px 2px 4px 1px",
   },
   appBarShift: {
     marginLeft: drawerWidth,

@@ -8,7 +8,7 @@ class Spinner extends Component {
   }
 
   static defaultProps = {
-    color: '#00BFFF',
+    color: '#388e3c',
     width: '60',
     height: '60',
     className: ''
@@ -19,7 +19,7 @@ class Spinner extends Component {
     return (
       <div className={`spinner-container ${className}`}>
         <div className="loader">
-          <Loader type="Puff" color={color} height={height} width={width} />
+          <Loader type="TailSpin" color={color} height={60} width={60} />
         </div>
         {this.props.text ? <p>{this.props.text}</p> : null}
       </div>

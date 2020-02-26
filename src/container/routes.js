@@ -29,6 +29,10 @@ const UserManagement = Loadable({
   loader: () => import("../Views/UserManagement/UserManagement"),
   loading: () => <Spinner {...styleProps} />
 });
+const NonIndividualTaxPayerProfile = Loadable({
+  loader: () => import("../Views/NonIndividualTaxPayers/Profile"),
+  loading: () => <Spinner {...styleProps} />
+});
 
 const routes = [
   { path: "/", exact: true, name: "Home", component: DefaultLayout },
@@ -36,5 +40,6 @@ const routes = [
   { path: "/individual-taxpayer", name: "IndividualTaxpayers", component: IndividualTaxpayers },
   { path: "/nonindividual-taxpayers", name: "NonIndividualTaxpayers", component: NonIndividualTaxPayers },
   { path: "/user-management", name: "UserManagement", component: UserManagement },
+  { path: "/nonindividual-taxpayer-profile", name: "NonIndividualTaxPayerProfile", component: NonIndividualTaxPayerProfile },
 ];
 export default routes;

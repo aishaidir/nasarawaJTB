@@ -7,16 +7,23 @@ export const styles = () => ({
   callout: {
     position: 'relative,'
   },
-
+  divider:{
+ padding: 3,
+ backgroundColor:"#fff"
+  },
   menu: {
-    borderRadius: 1,
-    width: 150,
-    backgroundColor: 'rgb(255,255,255) !important',
+    display: 'flex',
+  },
+  paper:{
+    padding: 2,
+    borderRadius: 5,
+    marginTop: -35,
+    backgroundColor: '#fff',
     '&:hover': {
-      backgroundColor: 'rgb(255,255,255) !important'
+      backgroundColor: '#fff'
     },
     '&:focus': {
-      backgroundColor: 'rgb(255,255,255) !important'
+      backgroundColor: '#fff'
     }
   }
 });

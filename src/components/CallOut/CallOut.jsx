@@ -47,27 +47,19 @@ handleSecondActionProps =() =>{
                   transformOrigin={{ vertical: "top"}}
                   open={Boolean(anchorEl)}
                   onClose={() => this.setState({ anchorEl: null })}
-                  style={{ marginTop: -30 }} classes={{ paper: classes.menu }}
+                  classes={{ paper: classes.paper }}
+                  autoFocus={false}
+                  disableAutoFocusItem={true}
                 >
                   {TopAction && <MenuItem onClick={()=>this.handleFirstActionProps()} 
                   color={Colors.danger}
                    style={{paddingLeft:0,paddingRight:0,}} 
-                  //  onMouseEnter={(e) => e.target.style.color =Colors.blueSecondary} 
-                  // onMouseLeave={(e)=>e.target.style.color =Colors.grey}
                   >{TopAction}</MenuItem>
                 }
-                <Divider />
+                <Divider/>
                 {BottomAction && <MenuItem  onClick={()=>this.handleSecondActionProps()} 
                 style={{color:Colors.danger,paddingLeft:0,paddingRight:0,}}
-                //  onMouseEnter={(e) => e.target.style.color =Colors.blueSecondary} 
-                  // onMouseLeave={(e)=>e.target.style.color =Colors.grey}
                   >{BottomAction}</MenuItem>}
-                  <Divider />
-                  {ThirdAction && <MenuItem  onClick={()=>this.handleSecondActionProps()} 
-                style={{color:Colors.danger,paddingLeft:0,paddingRight:0}}
-                //  onMouseEnter={(e) => e.target.style.color =Colors.blueSecondary} 
-                  // onMouseLeave={(e)=>e.target.style.color =Colors.grey}
-                  >{ThirdAction}</MenuItem>}
                 </Menu>
                 
       </div>
